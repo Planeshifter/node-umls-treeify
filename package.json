@@ -32,6 +32,8 @@
     "mocha": "^2.0.1"
   },
   "dependencies": {
-    "mysql": "^2.5.3"
+    "mysql": "^2.5.3",
+    "underscore": "^1.7.0",
+    "winston": "^0.8.3"
   }
 }

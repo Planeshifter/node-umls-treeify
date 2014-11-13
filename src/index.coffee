@@ -1,5 +1,9 @@
-getConnection = require './connect'
+getQuery = require './connect'
+network_promise = require './network'
+winston = require 'winston'
 
-console.log 'hallo'
 
-getConnection()
+network_promise.then( (net) ->
+
+  console.log(net.concepts)
+)
