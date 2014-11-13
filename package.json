@@ -1,0 +1,34 @@
+{
+  "name": "umls-treeify",
+  "version": "0.1.0",
+  "description": "Synset Trees based on the Unified Medical Language System (UMLS) Metathesaurus",
+  "main": "/lib/umls.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Planeshifter/node-umls-treeify.git"
+  },
+  "keywords": [
+    "semantic-web",
+    "umls",
+    "synset-trees",
+    "text-analytics"
+  ],
+  "author": "Philipp Burckhardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Planeshifter/node-umls-treeify/issues"
+  },
+  "homepage": "https://github.com/Planeshifter/node-umls-treeify",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-mocha-test": "^0.12.2",
+    "mocha": "^2.0.1"
+  }
+}
