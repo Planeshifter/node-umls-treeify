@@ -30,5 +30,8 @@
     "grunt-contrib-coffee": "^0.12.0",
     "grunt-mocha-test": "^0.12.2",
     "mocha": "^2.0.1"
+  },
+  "dependencies": {
+    "mysql": "^2.5.3"
   }
 }
