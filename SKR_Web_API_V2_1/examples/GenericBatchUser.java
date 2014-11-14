@@ -1,26 +1,26 @@
 /*
 ===========================================================================
 *
-*                            PUBLIC DOMAIN NOTICE                          
+*                            PUBLIC DOMAIN NOTICE
 *               National Center for Biotechnology Information
 *         Lister Hill National Center for Biomedical Communications
-*                                                                          
+*
 *  This software is a "United States Government Work" under the terms of the
 *  United States Copyright Act.  It was written as part of the authors' official
 *  duties as a United States Government contractor and thus cannot be
 *  copyrighted.  This software is freely available to the public for use. The
 *  National Library of Medicine and the U.S. Government have not placed any
-*  restriction on its use or reproduction.  
-*                                                                          
-*  Although all reasonable efforts have been taken to ensure the accuracy  
-*  and reliability of the software and data, the NLM and the U.S.          
-*  Government do not and cannot warrant the performance or results that    
-*  may be obtained by using this software or data. The NLM and the U.S.    
-*  Government disclaim all warranties, express or implied, including       
+*  restriction on its use or reproduction.
+*
+*  Although all reasonable efforts have been taken to ensure the accuracy
+*  and reliability of the software and data, the NLM and the U.S.
+*  Government do not and cannot warrant the performance or results that
+*  may be obtained by using this software or data. The NLM and the U.S.
+*  Government disclaim all warranties, express or implied, including
 *  warranties of performance, merchantability or fitness for any particular
-*  purpose.                                                                
-*                                                                          
-*  Please cite the authors in any work or product based on this material.   
+*  purpose.
+*
+*  Please cite the authors in any work or product based on this material.
 *
 ===========================================================================
 */
@@ -46,7 +46,7 @@
  *
  * This example also shows how to setup the constructor with an embedded
  * username and password so your program doesn't prompt for the information.
- * 
+ *
  * @author	Jim Mork
  * @version	1.0, September 18, 2006
  **/
@@ -67,7 +67,7 @@ public class GenericBatchUser
     System.out.println("usage: GenericBatchUser [options] inputFilename");
     System.out.println("  allowed options: ");
     System.out.println("    --email <address> : set email address. (required option)");
-    System.out.println("    --command <name> : batch command: metamap, semrep, etc. (default: " + 
+    System.out.println("    --command <name> : batch command: metamap, semrep, etc. (default: " +
 		       defaultCommand + ")");
     System.out.println("    --note <notes> : batch notes ");
     System.out.println("    --silent : don't send email after job completes.");
@@ -87,7 +87,7 @@ public class GenericBatchUser
     if (value != null) {
       if (value.length() > 0) {
 	return;
-      } 
+      }
     }
     System.out.println(msg);
     printHelp();
@@ -114,7 +114,7 @@ public class GenericBatchUser
     StringBuffer inputBuf = new StringBuffer();
     List<String> options = new ArrayList<String>();
 
-    int i = 0; 
+    int i = 0;
     while (i < args.length) {
       if (args[i].charAt(0) == '-') {
 	if (args[i].equals("-h") || args[i].equals("--help") || args[i].equals("-?")) {
@@ -152,12 +152,12 @@ public class GenericBatchUser
 	  }
 	}
       } else {
-	inputBuf.append(args[i]).append(" "); 
+	inputBuf.append(args[i]).append(" ");
       }
       i++;
     }
     // Instantiate the object for Generic Batch
-    GenericObject myGenericObj = new GenericObject("username","password");
+    GenericObject myGenericObj = new GenericObject("Planeshifter","R5sT+(o)");
     fatalMessageIfEmptyString(emailAddress, "email address is required.");
     myGenericObj.setField("Email_Address", emailAddress);
     fatalMessageIfEmptyString(batchCommand, "command for batch processing is required.");
@@ -181,7 +181,7 @@ public class GenericBatchUser
     }
 
     if (inputBuf.length() > 0) {
-      File inFile = new File(inputBuf.toString().trim()); 
+      File inFile = new File(inputBuf.toString().trim());
       if (inFile.exists()) {
 	myGenericObj.setFileField("UpLoad_File", inputBuf.toString().trim());
       }

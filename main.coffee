@@ -2,7 +2,7 @@
 
 getQuery = require __dirname + '/lib/connect'
 fNetwork = require __dirname + '/lib/network'
-getWordArrays = require __dirname + '/lib/getWordArrays'
+getConcepts = require __dirname + '/lib/getConcepts'
 
 winston = require 'winston'
 Promise = require 'bluebird'
@@ -17,8 +17,7 @@ fNetwork.then( (net) ->
 )
 
 createTree = (corpus) ->
-  wordArrays = getWordArrays(corpus)
-  console.log wordArrays
+  wordArrays = getConcepts(corpus)
 
 program
   .version('0.1.0')

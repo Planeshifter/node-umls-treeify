@@ -1,10 +1,10 @@
-var Promise, corpus, createTree, csv, data, delim, fNetwork, fs, getQuery, getWordArrays, mime, mime_type, program, util, winston;
+var Promise, corpus, createTree, csv, data, delim, fNetwork, fs, getConcepts, getQuery, mime, mime_type, program, util, winston;
 
 getQuery = require(__dirname + '/lib/connect');
 
 fNetwork = require(__dirname + '/lib/network');
 
-getWordArrays = require(__dirname + '/lib/getWordArrays');
+getConcepts = require(__dirname + '/lib/getConcepts');
 
 winston = require('winston');
 
@@ -26,8 +26,7 @@ fNetwork.then(function(net) {
 
 createTree = function(corpus) {
   var wordArrays;
-  wordArrays = getWordArrays(corpus);
-  return console.log(wordArrays);
+  return wordArrays = getConcepts(corpus);
 };
 
 program.version('0.1.0').option('-i, --input [value]', 'Load data from disk').option('-l, --list <items>', 'A list of input texts').option('-o, --output [value]', 'Write results to file').option('-t, --threshold <n>', 'Threshold for Tree Nodes', parseInt).option('-c, --combine', 'Merge document trees to form corpus tree').option('-d, --delim [value]', 'Delimiter to split text into documents').option('-v, --verbose', 'Print additional logging information').parse(process.argv);

@@ -1,26 +1,26 @@
 /*
 ===========================================================================
 *
-*                            PUBLIC DOMAIN NOTICE                          
+*                            PUBLIC DOMAIN NOTICE
 *               National Center for Biotechnology Information
 *         Lister Hill National Center for Biomedical Communications
-*                                                                          
+*
 *  This software is a "United States Government Work" under the terms of the
 *  United States Copyright Act.  It was written as part of the authors' official
 *  duties as a United States Government contractor and thus cannot be
 *  copyrighted.  This software is freely available to the public for use. The
 *  National Library of Medicine and the U.S. Government have not placed any
-*  restriction on its use or reproduction.  
-*                                                                          
-*  Although all reasonable efforts have been taken to ensure the accuracy  
-*  and reliability of the software and data, the NLM and the U.S.          
-*  Government do not and cannot warrant the performance or results that    
-*  may be obtained by using this software or data. The NLM and the U.S.    
-*  Government disclaim all warranties, express or implied, including       
+*  restriction on its use or reproduction.
+*
+*  Although all reasonable efforts have been taken to ensure the accuracy
+*  and reliability of the software and data, the NLM and the U.S.
+*  Government do not and cannot warrant the performance or results that
+*  may be obtained by using this software or data. The NLM and the U.S.
+*  Government disclaim all warranties, express or implied, including
 *  warranties of performance, merchantability or fitness for any particular
-*  purpose.                                                                
-*                                                                          
-*  Please cite the authors in any work or product based on this material.   
+*  purpose.
+*
+*  Please cite the authors in any work or product based on this material.
 *
 ===========================================================================
 */
@@ -33,7 +33,7 @@
  * of the UMLS Metathesaurus ("KSOURCE", "1011"), with "ignore_word_order" (-i)
  * and "all_derivational_variants" (D) set as arguments to MetaMap.  The
  * default "Human Readable" output will be produced.
- * 
+ *
  * @author	Jim Mork
  * @version	1.0, June 15, 2011
 **/
@@ -67,7 +67,7 @@ public class MMInteractive
         String bufferStr = buffer.toString();
         myIntMMObj.setField("APIText", bufferStr);
 
-        myIntMMObj.setField("KSOURCE", "1011");
+        myIntMMObj.setField("KSOURCE", "2014AA");
 
         // Optional field, program will run default MetaMap if not specified
 
