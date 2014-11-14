@@ -3,7 +3,9 @@ node-umls-treeify
 
 Synset Trees based on the Unified Medical Language System (UMLS) Metathesaurus
 
+### Requirements & Installation
 
+- The `$JAVA_HOME` environment variable has to be specified correctly 
 
 ### MetaMap Web API
 Version 2.1, June 1, 2012
