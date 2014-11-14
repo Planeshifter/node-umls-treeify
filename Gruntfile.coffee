@@ -7,5 +7,11 @@ module.exports = (grunt) ->
         src: [ '**/*.coffee' ],
         dest: 'lib',
         ext:  '.js'
+      compileMain:
+        options:
+          bare: true,
+        files:
+          'main.js': 'main.coffee', 
+
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.registerTask 'default', ['coffee']

@@ -1,6 +1,7 @@
 getQuery = require './connect'
 _ = require 'underscore'
 Promise = require 'bluebird'
+colors = require 'colors';
 
 class Relation
   constructor: (params = {}) ->
@@ -14,13 +15,19 @@ class Concept
   attach: (rel) ->
     @[rel.RL] ?= []
     @[rel.RL].push rel.STY_RL2
+  print: ->
+    console.log "---------- CONCEPT ----------".green
+    console.log "ID: ".yellow + @id.green
+    console.log "Name: ".yellow  + @name.green
+    console.log JSON.stringify @, null, 2
+    console.log "-----------------------------".green
+
   constructor: (params = {}, relations) ->
     @id = params.UI
     @name = params.STY_RL
     @definition = params.DEF
     @tree_number = params.STN_RTN
     @attach relation for relation in relations
-
 
 ### SRDEF TABLE
 Field Description

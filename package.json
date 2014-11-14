@@ -31,8 +31,17 @@
     "grunt-mocha-test": "^0.12.2",
     "mocha": "^2.0.1"
   },
+  "preferGlobal": "true",
+  "bin": {
+    "umls-treeify": "main.js"
+  },
   "dependencies": {
+    "colors": "^1.0.3",
+    "commander": "^2.5.0",
+    "csv": "^0.4.1",
+    "mime": "^1.2.11",
     "mysql": "^2.5.3",
+    "text-miner": "^0.1.4",
     "underscore": "^1.7.0",
     "winston": "^0.8.3"
   }
