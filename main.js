@@ -20,23 +20,22 @@ mime = require('mime');
 
 util = require('util');
 
-fNetwork.then(function(net) {
-  return net.concepts[1].print();
-});
-
 createTree = function(corpus) {
-  var wordArrays;
-  return wordArrays = getConcepts(corpus);
+  var conceptCandidates;
+  conceptCandidates = getConcepts(corpus);
+  return conceptCandidates.then(console.log);
 };
 
 program.version('0.1.0').option('-i, --input [value]', 'Load data from disk').option('-l, --list <items>', 'A list of input texts').option('-o, --output [value]', 'Write results to file').option('-t, --threshold <n>', 'Threshold for Tree Nodes', parseInt).option('-c, --combine', 'Merge document trees to form corpus tree').option('-d, --delim [value]', 'Delimiter to split text into documents').option('-v, --verbose', 'Print additional logging information').parse(process.argv);
 
 corpus;
 
-delim = String(program.delim);
+delim = program.delim;
 
 if (program.list) {
-  delim = delim != null ? delim : ";";
+  if (delim == null) {
+    delim = ";";
+  }
   corpus = program.list.split(delim);
   createTree(corpus);
 } else if (program.input) {
@@ -46,7 +45,9 @@ if (program.list) {
 
 switch (mime_type) {
   case "text/plain":
-    delim = delim != null ? delim : " ";
+    if (delim == null) {
+      delim = " ";
+    }
     corpus = String(data).replace(/\r\n?/g, "\n").split(delim).clean("");
     createTree(corpus);
     break;

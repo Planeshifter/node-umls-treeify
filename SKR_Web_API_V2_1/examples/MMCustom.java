@@ -27,7 +27,7 @@ public class MMCustom
   String bufferStr = buffer.toString();
 
   try {
-    text = readFile("mySample.txt", StandardCharsets.UTF_8);
+    text = readFile("temp.txt", StandardCharsets.UTF_8);
   } catch(IOException e){
     text = bufferStr;
   }

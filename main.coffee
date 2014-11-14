@@ -12,12 +12,9 @@ csv = require 'csv'
 mime = require 'mime'
 util = require 'util';
 
-fNetwork.then( (net) ->
-  net.concepts[1].print()
-)
-
 createTree = (corpus) ->
-  wordArrays = getConcepts(corpus)
+  conceptCandidates = getConcepts(corpus)
+  conceptCandidates.then(console.log)
 
 program
   .version('0.1.0')
@@ -32,10 +29,10 @@ program
 
 
 corpus
-delim = String(program.delim)
+delim = program.delim
 
 if program.list
-  delim = delim ? ";"
+  delim ?= ";"
   corpus = program.list.split(delim)
   createTree(corpus);
 else if program.input
@@ -43,7 +40,7 @@ else if program.input
   mime_type = mime.lookup(program.input)
 switch mime_type
   when "text/plain"
-    delim = delim ? " "
+    delim ?= " "
     corpus = String(data).replace(/\r\n?/g, "\n").split(delim).clean("")
     createTree(corpus)
   when "text/csv"
