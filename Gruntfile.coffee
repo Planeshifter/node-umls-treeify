@@ -1,5 +1,8 @@
 module.exports = (grunt) ->
   grunt.initConfig
+    watch:
+      files: [ '**/*.coffee' ]
+      tasks: [ 'coffee:build']
     coffee:
       build:
         expand: true,
@@ -11,7 +14,8 @@ module.exports = (grunt) ->
         options:
           bare: true,
         files:
-          'main.js': 'main.coffee', 
+          'main.js': 'main.coffee',
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.registerTask 'default', ['coffee']

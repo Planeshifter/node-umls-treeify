@@ -28,6 +28,7 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-test": "^0.12.2",
     "mocha": "^2.0.1"
   },
@@ -39,6 +40,7 @@
     "colors": "^1.0.3",
     "commander": "^2.5.0",
     "csv": "^0.4.1",
+    "meta-map": "^0.8.7",
     "mime": "^1.2.11",
     "mysql": "^2.5.3",
     "shell-escape": "^0.1.0",
