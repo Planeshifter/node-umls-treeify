@@ -40,7 +40,7 @@
     "colors": "^1.0.3",
     "commander": "^2.5.0",
     "csv": "^0.4.1",
-    "meta-map": "^0.8.7",
+    "meta-map": "^0.8.8",
     "mime": "^1.2.11",
     "mysql": "^2.5.3",
     "shell-escape": "^0.1.0",

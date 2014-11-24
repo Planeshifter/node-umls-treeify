@@ -2,8 +2,10 @@
 
 getQuery = require __dirname + '/lib/connect'
 fNetwork = require __dirname + '/lib/network'
-getConcepts = require __dirname + '/lib/getConcepts'
+getConcepts = require __dirname + '/lib/getCandidates'
+{constructSynsetData} = require __dirname + '/lib/constructSynsetData'
 
+BPromise = require 'bluebird'
 winston = require 'winston'
 Promise = require 'bluebird'
 program = require 'commander'
@@ -14,7 +16,14 @@ util = require 'util';
 
 createTree = (corpus) ->
   conceptCandidates = getConcepts(corpus)
-  conceptCandidates.then(console.log)
+  docTrees = conceptCandidates.map( (d, index) =>
+    docTreeMsg = "Construct Candidate Set for Words of Doc " + index
+    console.time(docTreeMsg)
+    wordTrees = d.map( (w) => constructSynsetData(w, index) )
+    BPromise.all(wordTrees).then console.timeEnd(docTreeMsg)
+    return wordTrees
+  )
+  conceptCandidates.then( (data) => console.log util.inspect(data, null, 4) )
 
 program
   .version('0.1.0')

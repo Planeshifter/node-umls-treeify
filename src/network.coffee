@@ -10,6 +10,7 @@ class Relation
     @definition = params.DEF
     @tree_number = params.STN_RTN
     @inverse = params.RIN
+    @abbreviation = params.ABR
 
 class Concept
   attach: (rel) ->
@@ -27,6 +28,7 @@ class Concept
     @name = params.STY_RL
     @definition = params.DEF
     @tree_number = params.STN_RTN
+    @abbreviation = params.ABR
     @attach relation for relation in relations
 
 ### SRDEF TABLE

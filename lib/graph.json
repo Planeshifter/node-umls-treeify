@@ -1,0 +1,2257 @@
+{
+  "nodes": [
+    {
+      "RT": "STY",
+      "UI": "T001",
+      "STY_RL": "Organism",
+      "STN_RTN": "A1.1",
+      "DEF": "Generally, a living individual, including all plants and animals.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "orgm",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T002",
+      "STY_RL": "Plant",
+      "STN_RTN": "A1.1.3.3",
+      "DEF": "An organism having cellulose cell walls, growing by synthesis of inorganic substances, generally distinguished by the presence of chlorophyll, and lacking the power of locomotion. Plant parts are included here as well.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "plnt",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T004",
+      "STY_RL": "Fungus",
+      "STN_RTN": "A1.1.3.2",
+      "DEF": "A eukaryotic organism characterized by the absence of chlorophyll and the presence of a rigid cell wall. Included here are both slime molds and true fungi such as yeasts, molds, mildews, and mushrooms.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "fngs",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T005",
+      "STY_RL": "Virus",
+      "STN_RTN": "A1.1.4",
+      "DEF": "An organism consisting of a core of a single nucleic acid enclosed in a protective coat of protein. A virus may replicate only inside a host living cell. A virus exhibits some but not all of the usual characteristics of living things.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "virs",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T007",
+      "STY_RL": "Bacterium",
+      "STN_RTN": "A1.1.2",
+      "DEF": "A small, typically one-celled, prokaryotic micro-organism.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "bact",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T008",
+      "STY_RL": "Animal",
+      "STN_RTN": "A1.1.3.1",
+      "DEF": "An organism with eukaryotic cells, and lacking stiff cell walls, plastids and photosynthetic pigments.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "anim",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T010",
+      "STY_RL": "Vertebrate",
+      "STN_RTN": "A1.1.3.1.1",
+      "DEF": "An animal which has a spinal column.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": null,
+      "ABR": "vtbt",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T011",
+      "STY_RL": "Amphibian",
+      "STN_RTN": "A1.1.3.1.1.1",
+      "DEF": "A cold-blooded, smooth-skinned vertebrate which characteristically hatches as an aquatic larva, breathing by gills. When mature, the amphibian breathes with lungs.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "amph",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T012",
+      "STY_RL": "Bird",
+      "STN_RTN": "A1.1.3.1.1.2",
+      "DEF": "A vertebrate having a constant body temperature and characterized by the presence of feathers.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "bird",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T013",
+      "STY_RL": "Fish",
+      "STN_RTN": "A1.1.3.1.1.3",
+      "DEF": "A cold-blooded aquatic vertebrate characterized by fins and breathing by gills. Included here are fishes having either a bony skeleton, such as a perch, or a cartilaginous skeleton, such as a shark, or those lacking a jaw, such as a lamprey or hagfish.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "fish",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T014",
+      "STY_RL": "Reptile",
+      "STN_RTN": "A1.1.3.1.1.5",
+      "DEF": "A cold-blooded vertebrate having an external covering of scales or horny plates. Reptiles breathe by means of lungs and are generally egg-laying.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "rept",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T015",
+      "STY_RL": "Mammal",
+      "STN_RTN": "A1.1.3.1.1.4",
+      "DEF": "A vertebrate having a constant body temperature and characterized by the presence of hair, mammary glands and sweat glands.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "mamm",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T016",
+      "STY_RL": "Human",
+      "STN_RTN": "A1.1.3.1.1.4.1",
+      "DEF": "Modern man, the only remaining species of the Homo genus.",
+      "EX": null,
+      "UN": "If a concept describes a human being from the point of view of occupational, family, social status, etc., then a type from the 'Group' hierarchy will be assigned instead.",
+      "NH": null,
+      "ABR": "humn",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T017",
+      "STY_RL": "Anatomical Structure",
+      "STN_RTN": "A1.2",
+      "DEF": "A normal or pathological part of the anatomy or structural organization of an organism.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": "Y",
+      "ABR": "anst",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T018",
+      "STY_RL": "Embryonic Structure",
+      "STN_RTN": "A1.2.1",
+      "DEF": "An anatomical structure that exists only before the organism is fully formed; in mammals, for example, a structure that exists only prior to the birth of the organism. This structure may be normal or abnormal.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "emst",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T019",
+      "STY_RL": "Congenital Abnormality",
+      "STN_RTN": "A1.2.2.1",
+      "DEF": "An abnormal structure, or one that is abnormal in size or location, present at birth or evolving over time as a result of a defect in embryogenesis.",
+      "EX": null,
+      "UN": "If the congenital abnormality involves multiple defects then the type 'Disease or Syndrome' will also be assigned.",
+      "NH": null,
+      "ABR": "cgab",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T020",
+      "STY_RL": "Acquired Abnormality",
+      "STN_RTN": "A1.2.2.2",
+      "DEF": "An abnormal structure, or one that is abnormal in size or location, found in or deriving from a previously normal structure. Acquired abnormalities are distinguished from diseases even though they may result in pathological functioning (e.g., \"hernias incarcerate\").",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "acab",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T021",
+      "STY_RL": "Fully Formed Anatomical Structure",
+      "STN_RTN": "A1.2.3",
+      "DEF": "An anatomical structure in a fully formed organism; in mammals, for example, a structure in the body after the birth of the organism.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": null,
+      "ABR": "ffas",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T022",
+      "STY_RL": "Body System",
+      "STN_RTN": "A2.1.4.1",
+      "DEF": "A complex of anatomical structures that performs a common function.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "bdsy",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T023",
+      "STY_RL": "Body Part, Organ, or Organ Component",
+      "STN_RTN": "A1.2.3.1",
+      "DEF": "A collection of cells and tissues which are localized to a specific area or combine and carry out one or more specialized functions of an organism. This ranges from gross structures to small components of complex organs. These structures are relatively localized in comparison to tissues.",
+      "EX": null,
+      "UN": "When assigning this type, consider whether 'Body Location or Region' might be the correct choice.",
+      "NH": null,
+      "ABR": "bpoc",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T024",
+      "STY_RL": "Tissue",
+      "STN_RTN": "A1.2.3.2",
+      "DEF": "An aggregation of similarly specialized cells and the associated intercellular substance. Tissues are relatively non-localized in comparison to body parts, organs or organ components.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "tisu",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T025",
+      "STY_RL": "Cell",
+      "STN_RTN": "A1.2.3.3",
+      "DEF": "The fundamental structural and functional unit of living organisms.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "cell",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T026",
+      "STY_RL": "Cell Component",
+      "STN_RTN": "A1.2.3.4",
+      "DEF": "A part of a cell or the intercellular matrix, generally visible by light microscopy.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "celc",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T028",
+      "STY_RL": "Gene or Genome",
+      "STN_RTN": "A1.2.3.5",
+      "DEF": "A specific sequence, or in the case of the genome the complete sequence, of nucleotides along a molecule of DNA or RNA (in the case of some viruses) which represent the functional units of heredity.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "gngm",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T029",
+      "STY_RL": "Body Location or Region",
+      "STN_RTN": "A2.1.5.2",
+      "DEF": "An area, subdivision, or region of the body demarcated for the purpose of topographical description.",
+      "EX": null,
+      "UN": "When assigning this type, consider whether 'Body Part, Organ, or Organ Component' might be the correct choice.",
+      "NH": "Y",
+      "ABR": "blor",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T030",
+      "STY_RL": "Body Space or Junction",
+      "STN_RTN": "A2.1.5.1",
+      "DEF": "An area enclosed or surrounded by body parts or organs or the place where two anatomical structures meet or connect.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": "Y",
+      "ABR": "bsoj",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T031",
+      "STY_RL": "Body Substance",
+      "STN_RTN": "A1.4.2",
+      "DEF": "Extracellular material, or mixtures of cells and extracellular material, produced, excreted, or accreted by the body. Included here are substances such as saliva, dental enamel, sweat, and gastric acid.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": "Y",
+      "ABR": "bdsu",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T032",
+      "STY_RL": "Organism Attribute",
+      "STN_RTN": "A2.3",
+      "DEF": "A property of the organism or its major parts.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": "Y",
+      "ABR": "orga",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T033",
+      "STY_RL": "Finding",
+      "STN_RTN": "A2.2",
+      "DEF": "That which is discovered by direct observation or measurement of an organism attribute or condition, including the clinical history of the patient. The history of the presence of a disease is a 'Finding' and is distinguished from the disease itself.",
+      "EX": null,
+      "UN": "Only in rare circumstances will findings be double-typed with either 'Pathologic Function' or 'Anatomical Abnormality'. Most findings will be assigned the types 'Laboratory or Test Result' or 'Sign or Symptom'. Only those findings that relate to patient history or to the determination of a state will be assigned the type 'Finding'.",
+      "NH": null,
+      "ABR": "fndg",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T034",
+      "STY_RL": "Laboratory or Test Result",
+      "STN_RTN": "A2.2.1",
+      "DEF": "The outcome of a specific test to measure an attribute or to determine the presence, absence, or degree of a condition.",
+      "EX": null,
+      "UN": "Laboratory or test results are considered inherently quantitative and, thus, are not assigned the additional type 'Quantitative Concept'.",
+      "NH": null,
+      "ABR": "lbtr",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T037",
+      "STY_RL": "Injury or Poisoning",
+      "STN_RTN": "B2.3",
+      "DEF": "A traumatic wound, injury, or poisoning caused by an external agent or force.",
+      "EX": null,
+      "UN": "An `Injury or Poisoning' is distinguished from a 'Disease or Syndrome' that may be a result of prolonged exposure to toxic materials.",
+      "NH": null,
+      "ABR": "inpo",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T038",
+      "STY_RL": "Biologic Function",
+      "STN_RTN": "B2.2.1",
+      "DEF": "A state, activity or process of the body or one of its systems or parts.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": "Y",
+      "ABR": "biof",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T039",
+      "STY_RL": "Physiologic Function",
+      "STN_RTN": "B2.2.1.1",
+      "DEF": "A normal process, activity, or state of the body.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "phsf",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T040",
+      "STY_RL": "Organism Function",
+      "STN_RTN": "B2.2.1.1.1",
+      "DEF": "A physiologic function of the organism as a whole, of multiple organ systems, or of multiple organs or tissues.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "orgf",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T041",
+      "STY_RL": "Mental Process",
+      "STN_RTN": "B2.2.1.1.1.1",
+      "DEF": "A physiologic function involving the mind or cognitive processing.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "menp",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T042",
+      "STY_RL": "Organ or Tissue Function",
+      "STN_RTN": "B2.2.1.1.2",
+      "DEF": "A physiologic function of a particular organ, organ system, or tissue.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "ortf",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T043",
+      "STY_RL": "Cell Function",
+      "STN_RTN": "B2.2.1.1.3",
+      "DEF": "A physiologic function inherent to cells or cell components.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "celf",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T044",
+      "STY_RL": "Molecular Function",
+      "STN_RTN": "B2.2.1.1.4",
+      "DEF": "A physiologic function occurring at the molecular level.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "moft",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T045",
+      "STY_RL": "Genetic Function",
+      "STN_RTN": "B2.2.1.1.4.1",
+      "DEF": "Functions of or related to the maintenance, translation or expression of the genetic material.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "genf",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T046",
+      "STY_RL": "Pathologic Function",
+      "STN_RTN": "B2.2.1.2",
+      "DEF": "A disordered process, activity, or state of the organism as a whole, of a body system or systems, or of multiple organs or tissues. Included here are normal responses to a negative stimulus as well as patholologic conditions or states that are less specific than a disease. Pathologic functions frequently have systemic effects.",
+      "EX": null,
+      "UN": "If the process is specific, for example to a site or substance, then 'Disease or Syndrome' will be assigned and not 'Pathologic Function'. For example, \"cerebral anoxia\", \"brain edema\", and \"milk hypersensitivity\" will all be assigned to 'Disease or Syndrome' only.",
+      "NH": null,
+      "ABR": "patf",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T047",
+      "STY_RL": "Disease or Syndrome",
+      "STN_RTN": "B2.2.1.2.1",
+      "DEF": "A condition which alters or interferes with a normal process, state, or activity of an organism. It is usually characterized by the abnormal functioning of one or more of the host's systems, parts, or organs. Included here is a complex of symptoms descriptive of a disorder.",
+      "EX": null,
+      "UN": "Any specific disease or syndrome that is modified by such modifiers as \"acute\", \"prolonged\", etc. will also be assigned to this type. If an anatomic abnormality has a pathologic manifestation, then it will be given this type as well as a type from the 'Anatomical Abnormality' hierarchy, e.g., \"Diabetic Cataract\" will be double-typed for this reason.",
+      "NH": null,
+      "ABR": "dsyn",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T048",
+      "STY_RL": "Mental or Behavioral Dysfunction",
+      "STN_RTN": "B2.2.1.2.1.1",
+      "DEF": "A clinically significant dysfunction whose major manifestation is behavioral or psychological. These dysfunctions may have identified or presumed biological etiologies or manifestations.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "mobd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T049",
+      "STY_RL": "Cell or Molecular Dysfunction",
+      "STN_RTN": "B2.2.1.2.2",
+      "DEF": "A pathologic function inherent to cells, parts of cells, or molecules.",
+      "EX": null,
+      "UN": "This is not intended to be a repository for diseases whose molecular basis has been established.",
+      "NH": null,
+      "ABR": "comd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T050",
+      "STY_RL": "Experimental Model of Disease",
+      "STN_RTN": "B2.2.1.2.3",
+      "DEF": "A representation in a non-human organism of a human disease for the purpose of research into its mechanism or treatment.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "emod",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T051",
+      "STY_RL": "Event",
+      "STN_RTN": "B",
+      "DEF": "A broad type for grouping activities, processes and states.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": null,
+      "ABR": "evnt",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T052",
+      "STY_RL": "Activity",
+      "STN_RTN": "B1",
+      "DEF": "An operation or series of operations that an organism or machine carries out or participates in.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type. Wherever possible, one of the more specific types from this hierarchy will be chosen. For concepts assigned to this type, the focus of interest is on the activity. When the focus of interest is the individual or group that is carrying out the activity, then a type from the 'Behavior' hierarchy will be chosen. In general, concepts will not receive a type from both the 'Activity' and the 'Behavior' hierarchies.",
+      "NH": null,
+      "ABR": "acty",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T053",
+      "STY_RL": "Behavior",
+      "STN_RTN": "B1.1",
+      "DEF": "Any of the psycho-social activities of humans or animals that can be observed directly by others or can be made systematically observable by the use of special strategies.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type. For concepts assigned to the 'Behavior' hierarchy, the focus of interest is on the individual or group that is carrying out the activity. When the activity is of paramount interest, then a type from the 'Activity' hierarchy will be chosen. In general, concepts will not receive a type from both the 'Behavior' and the 'Activity' hierarchies.",
+      "NH": "Y",
+      "ABR": "bhvr",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T054",
+      "STY_RL": "Social Behavior",
+      "STN_RTN": "B1.1.1",
+      "DEF": "Behavior that is a direct result or function of the interaction of humans or animals with their fellows. This includes behavior that may be considered anti-social.",
+      "EX": null,
+      "UN": "'Social Behavior' requires the direct participation of others and is, thus, distinguished from 'Individual Behavior' which is carried out by an individual, though others may be present.",
+      "NH": null,
+      "ABR": "socb",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T055",
+      "STY_RL": "Individual Behavior",
+      "STN_RTN": "B1.1.2",
+      "DEF": "Behavior exhibited by a human or an animal that is not a direct result of interaction with other members of the species, but which may have an effect on others.",
+      "EX": null,
+      "UN": "'Individual Behavior' is carried out by an individual, though others may be present, and is, thus, distinguished from 'Social Behavior' which requires the direct participation of others.",
+      "NH": null,
+      "ABR": "inbe",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T056",
+      "STY_RL": "Daily or Recreational Activity",
+      "STN_RTN": "B1.2",
+      "DEF": "An activity carried out for recreation or exercise, or as part of daily life.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "dora",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T057",
+      "STY_RL": "Occupational Activity",
+      "STN_RTN": "B1.3",
+      "DEF": "An activity carried out as part of an occupation or job.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "ocac",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T058",
+      "STY_RL": "Health Care Activity",
+      "STN_RTN": "B1.3.1",
+      "DEF": "An activity of or relating to the practice of medicine or involving the care of patients.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "hlca",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T059",
+      "STY_RL": "Laboratory Procedure",
+      "STN_RTN": "B1.3.1.1",
+      "DEF": "A procedure, method, or technique used to determine the composition, quantity, or concentration of a specimen, and which is carried out in a clinical laboratory. Included here are procedures which measure the times and rates of reactions.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "lbpr",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T060",
+      "STY_RL": "Diagnostic Procedure",
+      "STN_RTN": "B1.3.1.2",
+      "DEF": "A procedure, method, or technique used to determine the nature or identity of a disease or disorder. This excludes procedures which are primarily carried out on specimens in a laboratory.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "diap",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T061",
+      "STY_RL": "Therapeutic or Preventive Procedure",
+      "STN_RTN": "B1.3.1.3",
+      "DEF": "A procedure, method, or technique designed to prevent a disease or a disorder, or to improve physical function, or used in the process of treating a disease or injury.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "topp",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T062",
+      "STY_RL": "Research Activity",
+      "STN_RTN": "B1.3.2",
+      "DEF": "An activity carried out as part of research or experimentation.",
+      "EX": null,
+      "UN": "In some cases, a concept may be assigned to both this type and the type 'Intellectual Product'. For example, the concept \"Comparative Study\" might be viewed as both an activity and the result, or product, of that activity.",
+      "NH": null,
+      "ABR": "resa",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T063",
+      "STY_RL": "Molecular Biology Research Technique",
+      "STN_RTN": "B1.3.2.1",
+      "DEF": "Any of the techniques used in the study of or the directed modification of the gene complement of a living organism.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "mbrt",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T064",
+      "STY_RL": "Governmental or Regulatory Activity",
+      "STN_RTN": "B1.3.3",
+      "DEF": "An activity carried out by officially constituted governments, or an activity related to the creation or enforcement of the rules or regulations governing some field of endeavor.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "gora",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T065",
+      "STY_RL": "Educational Activity",
+      "STN_RTN": "B1.3.4",
+      "DEF": "An activity related to the organization and provision of education.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "edac",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T066",
+      "STY_RL": "Machine Activity",
+      "STN_RTN": "B1.4",
+      "DEF": "An activity carried out primarily or exclusively by machines.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "mcha",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T067",
+      "STY_RL": "Phenomenon or Process",
+      "STN_RTN": "B2",
+      "DEF": "A process or state which occurs naturally or as a result of an activity.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "phpr",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T068",
+      "STY_RL": "Human-caused Phenomenon or Process",
+      "STN_RTN": "B2.1",
+      "DEF": "A phenomenon or process that is a result of the activities of human beings.",
+      "EX": null,
+      "UN": "If the concept refers to the activity itself, rather than the result of that activity, a type from the 'Activity' hierarchy will be assigned instead.",
+      "NH": null,
+      "ABR": "hcpp",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T069",
+      "STY_RL": "Environmental Effect of Humans",
+      "STN_RTN": "B2.1.1",
+      "DEF": "A change in the natural environment that is a result of the activities of human beings.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "eehu",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T070",
+      "STY_RL": "Natural Phenomenon or Process",
+      "STN_RTN": "B2.2",
+      "DEF": "A phenomenon or process that occurs irrespective of the activities of human beings.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "npop",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T071",
+      "STY_RL": "Entity",
+      "STN_RTN": "A",
+      "DEF": "A broad type for grouping physical and conceptual entities.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": null,
+      "ABR": "enty",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T072",
+      "STY_RL": "Physical Object",
+      "STN_RTN": "A1",
+      "DEF": "An object perceptible to the sense of vision or touch.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "phob",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T073",
+      "STY_RL": "Manufactured Object",
+      "STN_RTN": "A1.3",
+      "DEF": "A physical object made by human beings.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "mnob",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T074",
+      "STY_RL": "Medical Device",
+      "STN_RTN": "A1.3.1",
+      "DEF": "A manufactured object used primarily in the diagnosis, treatment, or prevention of physiologic or anatomic disorders.",
+      "EX": null,
+      "UN": "A medical device may be used for research purposes, but since its primary use is for routine medical care, it is distinguished from a 'Research Device' which is used primarily for research purposes.",
+      "NH": null,
+      "ABR": "medd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T075",
+      "STY_RL": "Research Device",
+      "STN_RTN": "A1.3.2",
+      "DEF": "A manufactured object used primarily in carrying out scientific research or experimentation.",
+      "EX": null,
+      "UN": "A research device is distinguished from a 'Medical Device', which though it may be used for research purposes is used primarily for routine medical care.",
+      "NH": null,
+      "ABR": "resd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T077",
+      "STY_RL": "Conceptual Entity",
+      "STN_RTN": "A2",
+      "DEF": "A broad type for grouping abstract entities or concepts.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": null,
+      "ABR": "cnce",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T078",
+      "STY_RL": "Idea or Concept",
+      "STN_RTN": "A2.1",
+      "DEF": "An abstract concept, such as a social, religious or philosophical concept.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "idcn",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T079",
+      "STY_RL": "Temporal Concept",
+      "STN_RTN": "A2.1.1",
+      "DEF": "A concept which pertains to time or duration.",
+      "EX": null,
+      "UN": "If the concept refers to a phase, stage, cycle, interval, period, or rhythm, it is assigned to this type.",
+      "NH": null,
+      "ABR": "tmco",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T080",
+      "STY_RL": "Qualitative Concept",
+      "STN_RTN": "A2.1.2",
+      "DEF": "A concept which is an assessment of some quality, rather than a direct measurement.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "qlco",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T081",
+      "STY_RL": "Quantitative Concept",
+      "STN_RTN": "A2.1.3",
+      "DEF": "A concept which involves the dimensions, quantity or capacity of something using some unit of measure, or which involves the quantitative comparison of entities.",
+      "EX": null,
+      "UN": "If the concept refers to rate or distribution, the type 'Temporal Concept' is not also assigned.",
+      "NH": null,
+      "ABR": "qnco",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T082",
+      "STY_RL": "Spatial Concept",
+      "STN_RTN": "A2.1.5",
+      "DEF": "A location, region, or space, generally having definite boundaries.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "spco",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T083",
+      "STY_RL": "Geographic Area",
+      "STN_RTN": "A2.1.5.4",
+      "DEF": "A geographic location, generally having definite boundaries.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "geoa",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T085",
+      "STY_RL": "Molecular Sequence",
+      "STN_RTN": "A2.1.5.3",
+      "DEF": "A broad type for grouping the collected sequences of amino acids, carbohydrates, and nucleotide sequences. Descriptions of these sequences are generally reported in the published literature and/or are deposited in and maintained by databanks such as GenBank, European Molecular Biology Laboratory (EMBL), National Biomedical Research Foundation (NBRF), or other sequence repositories.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "mosq",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T086",
+      "STY_RL": "Nucleotide Sequence",
+      "STN_RTN": "A2.1.5.3.1",
+      "DEF": "The sequence of purines and pyrimidines in nucleic acids and polynucleotides. Included here are nucleotide-rich regions, conserved sequence, and DNA transforming region.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "nusq",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T087",
+      "STY_RL": "Amino Acid Sequence",
+      "STN_RTN": "A2.1.5.3.2",
+      "DEF": "The sequence of amino acids as arrayed in chains, sheets, etc., within the protein molecule. It is of fundamental importance in determining protein structure.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "amas",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T088",
+      "STY_RL": "Carbohydrate Sequence",
+      "STN_RTN": "A2.1.5.3.3",
+      "DEF": "The sequence of carbohydrates within polysaccharides, glycoproteins, and glycolipids.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "crbs",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T089",
+      "STY_RL": "Regulation or Law",
+      "STN_RTN": "A2.4.2",
+      "DEF": "An intellectual product resulting from legislative or regulatory activity.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "rnlw",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T090",
+      "STY_RL": "Occupation or Discipline",
+      "STN_RTN": "A2.6",
+      "DEF": "A vocation, academic discipline, or field of study, or a subpart of an occupation or discipline.",
+      "EX": null,
+      "UN": "If the concept refers to the individuals who have the vocation, the type 'Professional or Occupational Group' will be assigned instead.",
+      "NH": null,
+      "ABR": "ocdi",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T091",
+      "STY_RL": "Biomedical Occupation or Discipline",
+      "STN_RTN": "A2.6.1",
+      "DEF": "A vocation, academic discipline, or field of study related to biomedicine.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "bmod",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T092",
+      "STY_RL": "Organization",
+      "STN_RTN": "A2.7",
+      "DEF": "The result of uniting for a common purpose or function. The continued existence of an organization is not dependent on any of its members, its location, or particular facility. Components or subparts of organizations are also included here. Although the names of organizations are sometimes used to refer to the buildings in which they reside, they are not inherently physical in nature.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "orgt",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T093",
+      "STY_RL": "Health Care Related Organization",
+      "STN_RTN": "A2.7.1",
+      "DEF": "An established organization which carries out specific functions related to health care delivery or research in the life sciences.",
+      "EX": null,
+      "UN": "Concepts for health care related professional societies are assigned the type 'Professional Society'.",
+      "NH": null,
+      "ABR": "hcro",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T094",
+      "STY_RL": "Professional Society",
+      "STN_RTN": "A2.7.2",
+      "DEF": "An organization uniting those who have a common vocation or who are involved with a common field of study.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "pros",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T095",
+      "STY_RL": "Self-help or Relief Organization",
+      "STN_RTN": "A2.7.3",
+      "DEF": "An organization whose purpose and function is to provide assistance to the needy or to offer support to those sharing similar problems.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "shro",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T096",
+      "STY_RL": "Group",
+      "STN_RTN": "A2.9",
+      "DEF": "A conceptual entity referring to the classification of individuals according to certain shared characteristics.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": null,
+      "ABR": "grup",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T097",
+      "STY_RL": "Professional or Occupational Group",
+      "STN_RTN": "A2.9.1",
+      "DEF": "An individual or individuals classified according to their vocation.",
+      "EX": null,
+      "UN": "If the concept refers to the discipline or vocation itself, rather than to the individuals who have the vocation, then the type 'Occupation or Discipline' will be assigned instead.",
+      "NH": null,
+      "ABR": "prog",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T098",
+      "STY_RL": "Population Group",
+      "STN_RTN": "A2.9.2",
+      "DEF": "An indivdual or individuals classified according to their sex, racial origin, religion, common place of living, financial or social status, or some other cultural or behavioral attribute.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "popg",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T099",
+      "STY_RL": "Family Group",
+      "STN_RTN": "A2.9.3",
+      "DEF": "An individual or individuals classified according to their family relationships or relative position in the family unit.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "famg",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T100",
+      "STY_RL": "Age Group",
+      "STN_RTN": "A2.9.4",
+      "DEF": "An individual or individuals classified according to their age.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "aggp",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T101",
+      "STY_RL": "Patient or Disabled Group",
+      "STN_RTN": "A2.9.5",
+      "DEF": "An individual or individuals classified according to a disability, disease, condition or treatment.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "podg",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T102",
+      "STY_RL": "Group Attribute",
+      "STN_RTN": "A2.8",
+      "DEF": "A conceptual entity which refers to the frequency or distribution of certain characteristics or phenomena in certain groups.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "grpa",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T103",
+      "STY_RL": "Chemical",
+      "STN_RTN": "A1.4.1",
+      "DEF": "Compounds or substances of definite molecular composition. Chemicals are viewed from two distinct perspectives in the network, functionally and structurally. Almost every chemical concept is assigned at least two types, generally one from the structure hierarchy and at least one from the function hierarchy.",
+      "EX": null,
+      "UN": "Few concepts will be assigned to this broad type.",
+      "NH": null,
+      "ABR": "chem",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T104",
+      "STY_RL": "Chemical Viewed Structurally",
+      "STN_RTN": "A1.4.1.2",
+      "DEF": "A chemical or chemicals viewed from the perspective of their structural characteristics. Included here are concepts which can mean either a salt, an ion, or a compound (e.g., \"Bromates\" and \"Bromides\").",
+      "EX": null,
+      "UN": "Concepts are assigned to this type if they can be both organic and inorganic, e.g. sulfur compounds. Do not use this type if the concept has an important functional aspect, e.g., \"Mylanta Double Strength Liquid\" contains Al(OH)3, Mg(OH)2, and simethicone, but would be assigned only to 'Pharmacologic Substance'.",
+      "NH": null,
+      "ABR": "chvs",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T109",
+      "STY_RL": "Organic Chemical",
+      "STN_RTN": "A1.4.1.2.1",
+      "DEF": "The general class of carbon-containing compounds, usually based on carbon chains or rings, and also containing hydrogen (hydrocarbons), with or without nitrogen, oxygen, or other elements in which the bonding between elements is generally covalent.",
+      "EX": null,
+      "UN": "Salts of organic chemicals (such as Calcium Acetate) would be considered organic chemicals and should not also receive the type 'Inorganic Chemical'.",
+      "NH": null,
+      "ABR": "orch",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T110",
+      "STY_RL": "Steroid",
+      "STN_RTN": "A1.4.1.2.1.9.1",
+      "DEF": "One of a group of polycyclic, 17-carbon-atom, fused-ring compounds occurring both in natural and synthetic forms. Included here are naturally occurring and synthetic steroids, bufanolides, cardanolides, homosteroids, norsteroids, and secosteroids.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "strd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T111",
+      "STY_RL": "Eicosanoid",
+      "STN_RTN": "A1.4.1.2.1.9.2",
+      "DEF": "An oxygenated metabolite from polyunsaturated 20 carbon fatty acids including lipoxygenase and cyclooxygenase products and their synthetic analogs. This includes the prostaglandins and thromboxanes.",
+      "EX": null,
+      "UN": "Naturally occurring eicosanoids will also be assigned to a type from the 'Biologically Active Substance' hierarchy. Synthetic eicosanoids will also be assigned to the type 'Pharmacologic Substance'.",
+      "NH": null,
+      "ABR": "eico",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T114",
+      "STY_RL": "Nucleic Acid, Nucleoside, or Nucleotide",
+      "STN_RTN": "A1.4.1.2.1.5",
+      "DEF": "A complex compound of high molecular weight occurring in living cells. These are basically of two types, ribonucleic (RNA) and deoxyribonucleic (DNA) acids. Nucleic acids are made of nucleotides (nitrogen-containing base, a 5-carbon sugar, and one or more phosphate group) linked together by a phosphodiester bond between the 5' and 3' carbon atoms. Nucleosides are compounds composed of a purine or pyrimidine base (usually adenine, cytosine, guanine, thymine, uracil) linked to either a ribose or a deoxyribose sugar.",
+      "EX": null,
+      "UN": "If this type has been assigned, the type 'Organophosphorus Compound' will not also be assigned. Naturally occurring nucleic acids, nucleosides, or nucleotides will also be assigned a type from the 'Biologically Active Substance' hierarchy.",
+      "NH": null,
+      "ABR": "nnon",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T115",
+      "STY_RL": "Organophosphorus Compound",
+      "STN_RTN": "A1.4.1.2.1.6",
+      "DEF": "An organic compound containing phosphorus as a constituent. Included here are organic phosphinic, phosphonic and phosphoric acid derivatives and their thiophosphorus counterparts. Excluded are phospholipids, sugar phosphates, phosphoproteins, nucleotides, and nucleic acids.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "opco",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T116",
+      "STY_RL": "Amino Acid, Peptide, or Protein",
+      "STN_RTN": "A1.4.1.2.1.7",
+      "DEF": "Amino acids and chains of amino acids connected by peptide linkages.",
+      "EX": null,
+      "UN": "When the concept is both an enzyme and a protein, this type and the type 'Enzyme' will be assigned.",
+      "NH": null,
+      "ABR": "aapp",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T118",
+      "STY_RL": "Carbohydrate",
+      "STN_RTN": "A1.4.1.2.1.8",
+      "DEF": "A generic term that includes monosaccharides, oligosaccharides, and polysaccharides as well as substances derived from monosaccharides by reduction of the carbonyl group (alditols), by oxidation of one or more terminal group to carboxylic acids, or by replacement of one or more hydroxy groups by a hydrogen atom, an amino group, a thiol group or similar heteroatomic groups. It also includes derivatives of these compounds. Included here are sugar phosphates. Excluded are glycolipids and glycoproteins.",
+      "EX": null,
+      "UN": "Glycoproteins should only be typed as 'Amino Acid, Peptide, or Protein'. Sugar phosphates should only be typed as 'Carbohydrate'. Glycolipids should only be typed as 'Lipid'.",
+      "NH": null,
+      "ABR": "carb",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T119",
+      "STY_RL": "Lipid",
+      "STN_RTN": "A1.4.1.2.1.9",
+      "DEF": "An inclusive group of fat or fat-derived substances that are soluble in nonpolar solvents related to fatty acid esters, fatty alcohols, sterols, waxes, etc. Included in this group are the saponifiable lipids such as glycerides (fats and oils), essential (volatile) oils, and phospholipids.",
+      "EX": null,
+      "UN": "Phospholipids should not also be typed with 'Organophosphorus Compound'. Fatty acids are composed of a chain of alkyl groups containing from 4-22 carbon atoms (usually even-numbered) and characterized by a terminal carboxyl group.",
+      "NH": null,
+      "ABR": "lipd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T120",
+      "STY_RL": "Chemical Viewed Functionally",
+      "STN_RTN": "A1.4.1.1",
+      "DEF": "A chemical viewed from the perspective of its functional characteristics or pharmacological activities.",
+      "EX": null,
+      "UN": "A specific chemical will not be assigned here. Groupings of chemicals viewed functionally, such as \"Aerosol Propellants\" may appropriately be assigned here. A name that is inherently functional, such as \"Food Additives\", will not also be assigned a type from the 'Chemical Viewed Structurally' hierarchy.",
+      "NH": null,
+      "ABR": "chvf",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T121",
+      "STY_RL": "Pharmacologic Substance",
+      "STN_RTN": "A1.4.1.1.1",
+      "DEF": "A substance used in the treatment or prevention of pathologic disorders. This includes substances that occur naturally in the body and are administered therapeutically.",
+      "EX": null,
+      "UN": "If a substance is both endogenous and typically used as a drug, then this type and the type 'Biologically Active Substance' or one of its children are assigned. Body substances that are used therapeutically such as whole blood preparation, NOS would only receive the type 'Body Substance'. Substances used in the diagnosis or analysis of normal and abnormal body functions should be given the type 'Indicator, Reagent, or Diagnostic Aid'.",
+      "NH": null,
+      "ABR": "phsu",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T122",
+      "STY_RL": "Biomedical or Dental Material",
+      "STN_RTN": "A1.4.1.1.2",
+      "DEF": "A substance used in biomedicine or dentistry predominantly for its physical, as opposed to chemical, properties. Included here are biocompatible materials, tissue adhesives, bone cements, resins, toothpastes, etc.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "bodm",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T123",
+      "STY_RL": "Biologically Active Substance",
+      "STN_RTN": "A1.4.1.1.3",
+      "DEF": "A generally endogenous substance produced or required by an organism, of primary interest because of its role in the biologic functioning of the organism that produces it.",
+      "EX": null,
+      "UN": "If a substance is both endogenous and typically used as a drug, then this type and the type 'Pharmacologic Substance' are assigned.",
+      "NH": null,
+      "ABR": "bacs",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T124",
+      "STY_RL": "Neuroreactive Substance or Biogenic Amine",
+      "STN_RTN": "A1.4.1.1.3.1",
+      "DEF": "An endogenous substance whose activities affect or play an important role in the functioning of the nervous system. Included here are catecholamines, neuroregulators, neurophysins, etc.",
+      "EX": null,
+      "UN": "Unlike many of the other types under 'Biologically Active Substance', do not assign this type to drugs that are used on the nervous system unless the compound is endogenous.",
+      "NH": null,
+      "ABR": "nsba",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T125",
+      "STY_RL": "Hormone",
+      "STN_RTN": "A1.4.1.1.3.2",
+      "DEF": "In animals, a chemical usually secreted by an endocrine gland whose products are released into the circulating fluid. Hormones act as chemical messengers and regulate various physiologic processes such as growth, reproduction, metabolism, etc. They usually fall into two broad classes, steroid hormones and peptide hormones.",
+      "EX": null,
+      "UN": "Synthetic hormones that are used as drugs should receive this type and 'Pharmacologic Substance'. Plant hormones are assigned only to the type 'Pharmacologic Substance'.",
+      "NH": null,
+      "ABR": "horm",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T126",
+      "STY_RL": "Enzyme",
+      "STN_RTN": "A1.4.1.1.3.3",
+      "DEF": "A complex chemical, usually a protein, that is produced by living cells and which catalyzes specific biochemical reactions. There are six main types of enzymes: oxidoreductases, transferases, hydrolases, lyases, isomerases, and ligases.",
+      "EX": null,
+      "UN": "Generally when a concept is assigned to this type, it will also be assigned to the type 'Amino Acid, Peptide, or Protein'.",
+      "NH": null,
+      "ABR": "enzy",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T127",
+      "STY_RL": "Vitamin",
+      "STN_RTN": "A1.4.1.1.3.4",
+      "DEF": "A substance, usually an organic chemical complex, present in natural products or made synthetically, which is essential in the diet of man or other higher animals. Included here are vitamin precursors, provitamins, and vitamin supplements.",
+      "EX": null,
+      "UN": "Essential amino acids are not assigned to this type. They will be assigned to the type 'Amino Acid, Peptide, or Protein'. This can be used with 'Pharmacologic Substance' if the compound is being administered therapeutically or if the source has it classified as therapeutic (i.e., N'ICE Sugarless Vitamin C Drops).",
+      "NH": null,
+      "ABR": "vita",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T129",
+      "STY_RL": "Immunologic Factor",
+      "STN_RTN": "A1.4.1.1.3.5",
+      "DEF": "A biologically active substance whose activities affect or play a role in the functioning of the immune system.",
+      "EX": null,
+      "UN": "Antigens and antibodies are assigned to this type. Unlike most biologically active substances, some immunologic factors may be exogenous. Vaccines should be given this type and the type 'Pharmacologic Substance'.",
+      "NH": null,
+      "ABR": "imft",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T130",
+      "STY_RL": "Indicator, Reagent, or Diagnostic Aid",
+      "STN_RTN": "A1.4.1.1.4",
+      "DEF": "A substance primarily of interest for its use in laboratory or diagnostic tests and procedures to detect, measure, examine, or analyze other chemicals, processes, or conditions.",
+      "EX": null,
+      "UN": "Radioactive imaging agents should be assigned to this type and not to the type 'Pharmacologic Substance' unless they are also being used therapeutically.",
+      "NH": null,
+      "ABR": "irda",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T131",
+      "STY_RL": "Hazardous or Poisonous Substance",
+      "STN_RTN": "A1.4.1.1.5",
+      "DEF": "A substance of concern because of its potentially hazardous or toxic effects. This would include most drugs of abuse, as well as agents that require special handling because of their toxicity.",
+      "EX": null,
+      "UN": "Most pharmaceutical agents, although potentially harmful, are excluded here and are assigned to the type 'Pharmacologic Substance'. All pesticides are assigned to this type.",
+      "NH": null,
+      "ABR": "hops",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T167",
+      "STY_RL": "Substance",
+      "STN_RTN": "A1.4",
+      "DEF": "A material with definite or fairly definite chemical composition.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "sbst",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T168",
+      "STY_RL": "Food",
+      "STN_RTN": "A1.4.3",
+      "DEF": "Any substance generally containing nutrients, such as carbohydrates, proteins, and fats, that can be ingested by a living organism and metabolized into energy and body tissue. Some foods are naturally occurring, others are either partially or entirely made by humans.",
+      "EX": null,
+      "UN": "Food additives, food preservatives, and food dyes should be given the type 'Chemical Viewed Functionally'; \"Diet Coke\" would be assigned this type.",
+      "NH": null,
+      "ABR": "food",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T169",
+      "STY_RL": "Functional Concept",
+      "STN_RTN": "A2.1.4",
+      "DEF": "A concept which is of interest because it pertains to the carrying out of a process or activity.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "ftcn",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T170",
+      "STY_RL": "Intellectual Product",
+      "STN_RTN": "A2.4",
+      "DEF": "A conceptual entity resulting from human endeavor. Concepts assigned to this type generally refer to information created by humans for some purpose.",
+      "EX": null,
+      "UN": "Concepts referring to theorems, models, and systems are assigned here. In some cases, a concept may be assigned to both 'Intellectual Product' and 'Research Activity'. For example, the concept \"Comparative Study\" might be viewed as both an activity and the result, or product, of that activity.",
+      "NH": null,
+      "ABR": "inpr",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T171",
+      "STY_RL": "Language",
+      "STN_RTN": "A2.5",
+      "DEF": "The system of communication used by a particular nation or people.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "lang",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T184",
+      "STY_RL": "Sign or Symptom",
+      "STN_RTN": "A2.2.2",
+      "DEF": "An observable manifestation of a disease or condition based on clinical judgment, or a manifestation of a disease or condition which is experienced by the patient and reported as a subjective observation.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "sosy",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T185",
+      "STY_RL": "Classification",
+      "STN_RTN": "A2.4.1",
+      "DEF": "A term or system of terms denoting an arrangement by class or category.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "clas",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T190",
+      "STY_RL": "Anatomical Abnormality",
+      "STN_RTN": "A1.2.2",
+      "DEF": "An abnormal structure, or one that is abnormal in size or location.",
+      "EX": null,
+      "UN": "Use this type if the abnormality in question can be either an acquired or congenital abnormality. Neoplasms are not included here. These are given the type 'Neoplastic Process'. If an anatomical abnormality has a pathologic manifestation, then it will additionally be given the type 'Disease or Syndrome', e.g., \"Diabetic Cataract\" will be double-typed for this reason.",
+      "NH": null,
+      "ABR": "anab",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T191",
+      "STY_RL": "Neoplastic Process",
+      "STN_RTN": "B2.2.1.2.1.2",
+      "DEF": "A new and abnormal growth of tissue in which the growth is uncontrolled and progressive. The growths may be malignant or benign.",
+      "EX": null,
+      "UN": "All neoplasms are assigned to this type. Do not also assign a type from the 'Anatomical Abnormality' hierarchy.",
+      "NH": null,
+      "ABR": "neop",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T192",
+      "STY_RL": "Receptor",
+      "STN_RTN": "A1.4.1.1.3.6",
+      "DEF": "A specific structure or site on the cell surface or within its cytoplasm that recognizes and binds with other specific molecules. These include the proteins on the surface of an immunocompetent cell that binds with antigens, or proteins found on the surface molecules that bind with hormones or neurotransmitters and react with other molecules that respond in a specific way.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "rcpt",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T194",
+      "STY_RL": "Archaeon",
+      "STN_RTN": "A1.1.1",
+      "DEF": "A member of one of the three domains of life, formerly called Archaebacteria under the taxon Bacteria, but now considered separate and distinct. Archaea are characterized by: 1) the presence of characteristic tRNAs and ribosomal RNAs; 2) the absence of peptidoglycan cell walls; 3) the presence of ether-linked lipids built from branched-chain subunits; and 4) their occurrence in unusual habitats. While archaea resemble bacteria in morphology and genomic organization, they resemble eukarya in their method of genomic replication.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "arch",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T195",
+      "STY_RL": "Antibiotic",
+      "STN_RTN": "A1.4.1.1.1.1",
+      "DEF": "A pharmacologically active compound produced by growing microorganisms which kill or inhibit growth of other microorganisms.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "antb",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T196",
+      "STY_RL": "Element, Ion, or Isotope",
+      "STN_RTN": "A1.4.1.2.3",
+      "DEF": "One of the 109 presently known fundamental substances that comprise all matter at and above the atomic level. This includes elemental metals, rare gases, and most abundant naturally occurring radioactive elements, as well as the ionic counterparts of elements (NA+, Cl-), and the less abundant isotopic forms. This does not include organic ions such as iodoacetate to which the type 'Organic Chemical' is assigned.",
+      "EX": null,
+      "UN": "Group terms such as sulfates would be assigned to the type 'Chemical Viewed Structurally'. Substances such as aluminum chloride would be assigned the type 'Inorganic Chemical'. Technetium Tc 99m Aggregated Albumin would not receive this type.",
+      "NH": null,
+      "ABR": "elii",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T197",
+      "STY_RL": "Inorganic Chemical",
+      "STN_RTN": "A1.4.1.2.2",
+      "DEF": "Chemical elements and their compounds, excluding the hydrocarbons and their derivatives (except carbides, carbonates, cyanides, cyanates and carbon disulfide). Generally inorganic compounds contain ionic bonds. Included here are inorganic acids and salts, alloys, alkalies, and minerals.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "inch",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T200",
+      "STY_RL": "Clinical Drug",
+      "STN_RTN": "A1.3.3",
+      "DEF": "A pharmaceutical preparation as produced by the manufacturer. The name usually includes the substance, its strength, and the form, but may include the substance and only one of the other two items.",
+      "EX": null,
+      "UN": "Do not double type with Pharmacologic Substance, Antibiotic, or other chemical semantic types.",
+      "NH": null,
+      "ABR": "clnd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T201",
+      "STY_RL": "Clinical Attribute",
+      "STN_RTN": "A2.3.1",
+      "DEF": "An observable or measurable property or state of an organism of clinical interest.",
+      "EX": null,
+      "UN": "These are the attributes that are being evaluated or measured, not the results of the evaluation.",
+      "NH": null,
+      "ABR": "clna",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T203",
+      "STY_RL": "Drug Delivery Device",
+      "STN_RTN": "A1.3.1.1",
+      "DEF": "A medical device that contains a clinical drug or drugs.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "drdd",
+      "RIN": null
+    },
+    {
+      "RT": "STY",
+      "UI": "T204",
+      "STY_RL": "Eukaryote",
+      "STN_RTN": "A1.1.3",
+      "DEF": "One of the three domains of life (the others being Bacteria and Archaea), also called Eukarya. These are organisms whose cells are enclosed in membranes and possess a nucleus. They comprise almost all multicellular and many unicellular organisms, and are traditionally divided into groups (sometimes called kingdoms) including Animals, Plants, Fungi, various Algae, and other taxa that were previously part of the old kingdom Protista.",
+      "EX": null,
+      "UN": "NULL",
+      "NH": null,
+      "ABR": "euka",
+      "RIN": null
+    }
+  ],
+  "links": [
+    {
+      "type": "isa",
+      "source": 16,
+      "target": 122
+    },
+    {
+      "type": "isa",
+      "target": 44,
+      "source": 45
+    },
+    {
+      "type": "isa",
+      "target": 87,
+      "source": 91
+    },
+    {
+      "type": "isa",
+      "target": 76,
+      "source": 78
+    },
+    {
+      "type": "isa",
+      "target": 96,
+      "source": 101
+    },
+    {
+      "type": "isa",
+      "target": 6,
+      "source": 7
+    },
+    {
+      "type": "isa",
+      "target": 13,
+      "source": 122
+    },
+    {
+      "type": "isa",
+      "source": 13,
+      "target": 65
+    },
+    {
+      "type": "isa",
+      "source": 5,
+      "target": 132
+    },
+    {
+      "type": "isa",
+      "target": 105,
+      "source": 126
+    },
+    {
+      "type": "isa",
+      "target": 0,
+      "source": 125
+    },
+    {
+      "type": "isa",
+      "target": 0,
+      "source": 4
+    },
+    {
+      "type": "isa",
+      "target": 45,
+      "source": 46
+    },
+    {
+      "type": "isa",
+      "source": 31,
+      "target": 63
+    },
+    {
+      "type": "isa",
+      "target": 104,
+      "source": 107
+    },
+    {
+      "type": "isa",
+      "target": 81,
+      "source": 82
+    },
+    {
+      "type": "isa",
+      "target": 104,
+      "source": 106
+    },
+    {
+      "type": "isa",
+      "target": 6,
+      "source": 8
+    },
+    {
+      "type": "isa",
+      "source": 24,
+      "target": 74
+    },
+    {
+      "type": "isa",
+      "target": 17,
+      "source": 19
+    },
+    {
+      "type": "isa",
+      "source": 25,
+      "target": 74
+    },
+    {
+      "type": "isa",
+      "source": 26,
+      "target": 115
+    },
+    {
+      "type": "isa",
+      "source": 18,
+      "target": 117
+    },
+    {
+      "type": "isa",
+      "target": 76,
+      "source": 79
+    },
+    {
+      "type": "isa",
+      "target": 96,
+      "source": 102
+    },
+    {
+      "type": "isa",
+      "target": 17,
+      "source": 22
+    },
+    {
+      "type": "isa",
+      "target": 32,
+      "source": 36
+    },
+    {
+      "type": "isa",
+      "target": 39,
+      "source": 42
+    },
+    {
+      "type": "isa",
+      "target": 17,
+      "source": 21
+    },
+    {
+      "type": "isa",
+      "target": 94,
+      "source": 104
+    },
+    {
+      "type": "isa",
+      "target": 94,
+      "source": 95
+    },
+    {
+      "type": "isa",
+      "source": 94,
+      "target": 115
+    },
+    {
+      "type": "isa",
+      "target": 118,
+      "source": 121
+    },
+    {
+      "type": "isa",
+      "target": 27,
+      "source": 130
+    },
+    {
+      "type": "isa",
+      "target": 66,
+      "source": 129
+    },
+    {
+      "type": "isa",
+      "target": 64,
+      "source": 69
+    },
+    {
+      "type": "isa",
+      "source": 15,
+      "target": 122
+    },
+    {
+      "type": "isa",
+      "target": 45,
+      "source": 49
+    },
+    {
+      "type": "isa",
+      "target": 51,
+      "source": 53
+    },
+    {
+      "type": "isa",
+      "target": 39,
+      "source": 40
+    },
+    {
+      "type": "isa",
+      "target": 67,
+      "source": 131
+    },
+    {
+      "type": "isa",
+      "target": 50,
+      "source": 58
+    },
+    {
+      "type": "isa",
+      "source": 98,
+      "target": 103
+    },
+    {
+      "type": "isa",
+      "target": 95,
+      "source": 127
+    },
+    {
+      "type": "isa",
+      "target": 13,
+      "source": 14
+    },
+    {
+      "type": "isa",
+      "target": 61,
+      "source": 62
+    },
+    {
+      "type": "isa",
+      "target": 107,
+      "source": 110
+    },
+    {
+      "type": "isa",
+      "target": 0,
+      "source": 132
+    },
+    {
+      "type": "isa",
+      "target": 39,
+      "source": 43
+    },
+    {
+      "type": "isa",
+      "target": 87,
+      "source": 90
+    },
+    {
+      "type": "isa",
+      "source": 28,
+      "target": 69
+    },
+    {
+      "type": "isa",
+      "target": 6,
+      "source": 9
+    },
+    {
+      "type": "isa",
+      "target": 115,
+      "source": 116
+    },
+    {
+      "type": "isa",
+      "target": 13,
+      "source": 17
+    },
+    {
+      "type": "isa",
+      "target": 70,
+      "source": 117
+    },
+    {
+      "type": "isa",
+      "source": 2,
+      "target": 132
+    },
+    {
+      "type": "isa",
+      "target": 17,
+      "source": 23
+    },
+    {
+      "type": "isa",
+      "target": 37,
+      "source": 38
+    },
+    {
+      "type": "isa",
+      "target": 74,
+      "source": 75
+    },
+    {
+      "type": "isa",
+      "target": 50,
+      "source": 57
+    },
+    {
+      "type": "isa",
+      "target": 69,
+      "source": 93
+    },
+    {
+      "type": "isa",
+      "target": 69,
+      "source": 87
+    },
+    {
+      "type": "isa",
+      "target": 104,
+      "source": 114
+    },
+    {
+      "type": "isa",
+      "target": 50,
+      "source": 51
+    },
+    {
+      "type": "isa",
+      "target": 83,
+      "source": 84
+    },
+    {
+      "type": "isa",
+      "target": 107,
+      "source": 109
+    },
+    {
+      "type": "isa",
+      "target": 60,
+      "source": 61
+    },
+    {
+      "type": "isa",
+      "target": 11,
+      "source": 12
+    },
+    {
+      "type": "isa",
+      "target": 69,
+      "source": 70
+    },
+    {
+      "type": "isa",
+      "target": 107,
+      "source": 112
+    },
+    {
+      "type": "isa",
+      "target": 104,
+      "source": 113
+    },
+    {
+      "type": "isa",
+      "target": 46,
+      "source": 48
+    },
+    {
+      "type": "isa",
+      "source": 30,
+      "target": 60
+    },
+    {
+      "type": "isa",
+      "target": 95,
+      "source": 128
+    },
+    {
+      "type": "isa",
+      "target": 69,
+      "source": 118
+    },
+    {
+      "type": "isa",
+      "target": 51,
+      "source": 52
+    },
+    {
+      "type": "isa",
+      "target": 28,
+      "source": 29
+    },
+    {
+      "type": "isa",
+      "target": 69,
+      "source": 119
+    },
+    {
+      "type": "isa",
+      "target": 96,
+      "source": 103
+    },
+    {
+      "type": "isa",
+      "target": 45,
+      "source": 59
+    },
+    {
+      "type": "isa",
+      "target": 6,
+      "source": 11
+    },
+    {
+      "type": "isa",
+      "target": 65,
+      "source": 66
+    },
+    {
+      "type": "isa",
+      "target": 66,
+      "source": 67
+    },
+    {
+      "type": "isa",
+      "target": 33,
+      "source": 34
+    },
+    {
+      "type": "isa",
+      "target": 40,
+      "source": 41
+    },
+    {
+      "type": "isa",
+      "target": 55,
+      "source": 56
+    },
+    {
+      "type": "isa",
+      "target": 32,
+      "source": 37
+    },
+    {
+      "type": "isa",
+      "target": 74,
+      "source": 76
+    },
+    {
+      "type": "isa",
+      "target": 60,
+      "source": 63
+    },
+    {
+      "type": "isa",
+      "target": 40,
+      "source": 123
+    },
+    {
+      "type": "isa",
+      "target": 107,
+      "source": 108
+    },
+    {
+      "type": "isa",
+      "target": 96,
+      "source": 99
+    },
+    {
+      "type": "isa",
+      "target": 76,
+      "source": 77
+    },
+    {
+      "type": "isa",
+      "target": 69,
+      "source": 81
+    },
+    {
+      "type": "isa",
+      "target": 45,
+      "source": 50
+    },
+    {
+      "type": "isa",
+      "target": 32,
+      "source": 35
+    },
+    {
+      "type": "isa",
+      "target": 95,
+      "source": 96
+    },
+    {
+      "type": "isa",
+      "source": 27,
+      "target": 69
+    },
+    {
+      "type": "isa",
+      "target": 32,
+      "source": 33
+    },
+    {
+      "type": "isa",
+      "source": 0,
+      "target": 65
+    },
+    {
+      "type": "isa",
+      "target": 69,
+      "source": 83
+    },
+    {
+      "type": "isa",
+      "target": 96,
+      "source": 100
+    },
+    {
+      "type": "isa",
+      "target": 31,
+      "source": 39
+    },
+    {
+      "type": "isa",
+      "target": 87,
+      "source": 92
+    },
+    {
+      "type": "isa",
+      "target": 104,
+      "source": 105
+    },
+    {
+      "type": "isa",
+      "target": 44,
+      "source": 60
+    },
+    {
+      "type": "isa",
+      "target": 64,
+      "source": 65
+    },
+    {
+      "type": "isa",
+      "target": 31,
+      "source": 32
+    },
+    {
+      "type": "isa",
+      "source": 1,
+      "target": 132
+    },
+    {
+      "type": "isa",
+      "target": 87,
+      "source": 89
+    },
+    {
+      "type": "isa",
+      "target": 83,
+      "source": 85
+    },
+    {
+      "type": "isa",
+      "target": 87,
+      "source": 88
+    },
+    {
+      "type": "isa",
+      "target": 70,
+      "source": 72
+    },
+    {
+      "type": "isa",
+      "target": 70,
+      "source": 73
+    },
+    {
+      "type": "isa",
+      "target": 107,
+      "source": 124
+    },
+    {
+      "type": "isa",
+      "source": 80,
+      "target": 118
+    },
+    {
+      "type": "isa",
+      "target": 6,
+      "source": 10
+    },
+    {
+      "type": "isa",
+      "target": 50,
+      "source": 55
+    },
+    {
+      "type": "isa",
+      "target": 66,
+      "source": 68
+    },
+    {
+      "type": "isa",
+      "target": 83,
+      "source": 86
+    },
+    {
+      "type": "isa",
+      "target": 28,
+      "source": 120
+    },
+    {
+      "type": "isa",
+      "target": 46,
+      "source": 47
+    },
+    {
+      "type": "isa",
+      "target": 70,
+      "source": 74
+    },
+    {
+      "type": "isa",
+      "source": 97,
+      "target": 103
+    },
+    {
+      "type": "isa",
+      "target": 65,
+      "source": 115
+    },
+    {
+      "type": "isa",
+      "target": 70,
+      "source": 71
+    },
+    {
+      "type": "isa",
+      "target": 51,
+      "source": 54
+    },
+    {
+      "type": "isa",
+      "target": 17,
+      "source": 20
+    },
+    {
+      "type": "isa",
+      "target": 5,
+      "source": 6
+    },
+    {
+      "type": "isa",
+      "target": 0,
+      "source": 3
+    },
+    {
+      "type": "isa",
+      "target": 107,
+      "source": 111
+    }
+  ]
+}
