@@ -4,6 +4,10 @@ getQuery = require __dirname + '/lib/connect'
 fNetwork = require __dirname + '/lib/network'
 getConcepts = require __dirname + '/lib/getCandidates'
 {constructSynsetData} = require __dirname + '/lib/constructSynsetData'
+{generateCorpusTree} = require __dirname + '/lib/treeGenerator'
+calculateCounts  = require __dirname + "/lib/counting"
+thresholdTree = require __dirname + "/lib/thresholdTree"
+
 
 BPromise = require 'bluebird'
 winston = require 'winston'
@@ -23,7 +27,24 @@ createTree = (corpus) ->
     BPromise.all(wordTrees).then console.timeEnd(docTreeMsg)
     return wordTrees
   )
-  conceptCandidates.then( (data) => console.log util.inspect(data, null, 4) )
+  if program.combine
+    corpusTree = docTrees.then( (docs) => generateCorpusTree(docs) )
+    finalTree = corpusTree.then( (tree) => calculateCounts(tree) )
+    finalTree.then( (data) => console.log util.inspect(data, null, 4) )
+
+    finalTree.then( (data) =>
+      ret = {}
+      ret.tree = finalTree
+      ret.corpus = corpus
+      ret = Promise.props(ret);
+      ret.then( (output) =>
+        outputJSON = if program.pretty then JSON.stringify(output, null, 2) else JSON.stringify(output)
+        if program.output
+          fs.writeFileSync(program.output, outputJSON)
+        else
+          console.log(outputJSON)
+      )
+    )
 
 program
   .version('0.1.0')

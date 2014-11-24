@@ -61,6 +61,10 @@ network = Promise.join(fEdges, fDefs,
           e.STY_RL1 == x.STY_RL
         new Concept(x, relevant_relations)
       )
+    ret.concepts = ret.concepts.map( (o) =>
+      o.isa = ret.concepts.filter( (e) => e.name == o.isa[0] )[0]
+      return o
+    )
     ret.edges = edges[0];
     return ret
 )

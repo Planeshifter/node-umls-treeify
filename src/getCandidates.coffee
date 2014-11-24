@@ -29,19 +29,24 @@ getCandidates = (docs) ->
     )
     .map( (mappings) =>
       return mappings.map( (map) => map?.MappingCandidates.Candidate)
-    ).map(
-      (x) => x.removeAll(undefined)
-    ).map( (doc) =>
-      console.log util.inspect doc, null, 16
-      doc = doc.map( (c) => {CandidateCUI: c.CandidateCUI, SemTypes: c.SemTypes, MatchedWords: c.MatchedWords} )
-      console.log doc
-      return doc
-    ).map( (w) =>
-      fNetwork.then( (network) =>
-        w.synset = network.concepts.filter( (s) => s.abbreviation == w.SemTypes.SemType )
-        console.log w
-      )
+    ).map( (x) =>
+      x.removeAll(undefined)
     )
+
+    fMappingCandidates = BPromise.join(fNetwork, fMappingCandidates, (network, candidates) =>
+      ret = candidates.map( (doc, i) =>
+        doc = doc.map( (c) => {CandidateCUI: c.CandidateCUI, SemTypes: c.SemTypes, MatchedWords: c.MatchedWords} )
+        return doc
+      ).map( (doc) =>
+        doc = doc.map( (w) =>
+          w.synset = network.concepts.filter( (s) => s.abbreviation == w.SemTypes.SemType )
+          return w
+        )
+        return doc
+      )
+      return ret
+    )
+
     return fMappingCandidates
 
 module.exports = getCandidates

@@ -1,4 +1,4 @@
-var BPromise, Promise, constructSynsetData, corpus, createTree, csv, data, delim, fNetwork, fs, getConcepts, getQuery, mime, mime_type, program, util, winston;
+var BPromise, Promise, calculateCounts, constructSynsetData, corpus, createTree, csv, data, delim, fNetwork, fs, generateCorpusTree, getConcepts, getQuery, mime, mime_type, program, thresholdTree, util, winston;
 
 getQuery = require(__dirname + '/lib/connect');
 
@@ -7,6 +7,12 @@ fNetwork = require(__dirname + '/lib/network');
 getConcepts = require(__dirname + '/lib/getCandidates');
 
 constructSynsetData = require(__dirname + '/lib/constructSynsetData').constructSynsetData;
+
+generateCorpusTree = require(__dirname + '/lib/treeGenerator').generateCorpusTree;
+
+calculateCounts = require(__dirname + "/lib/counting");
+
+thresholdTree = require(__dirname + "/lib/thresholdTree");
 
 BPromise = require('bluebird');
 
@@ -25,7 +31,7 @@ mime = require('mime');
 util = require('util');
 
 createTree = function(corpus) {
-  var conceptCandidates, docTrees;
+  var conceptCandidates, corpusTree, docTrees, finalTree;
   conceptCandidates = getConcepts(corpus);
   docTrees = conceptCandidates.map((function(_this) {
     return function(d, index) {
@@ -39,11 +45,41 @@ createTree = function(corpus) {
       return wordTrees;
     };
   })(this));
-  return conceptCandidates.then((function(_this) {
-    return function(data) {
-      return console.log(util.inspect(data, null, 4));
-    };
-  })(this));
+  if (program.combine) {
+    corpusTree = docTrees.then((function(_this) {
+      return function(docs) {
+        return generateCorpusTree(docs);
+      };
+    })(this));
+    finalTree = corpusTree.then((function(_this) {
+      return function(tree) {
+        return calculateCounts(tree);
+      };
+    })(this));
+    finalTree.then((function(_this) {
+      return function(data) {
+        return console.log(util.inspect(data, null, 4));
+      };
+    })(this));
+    return finalTree.then((function(_this) {
+      return function(data) {
+        var ret;
+        ret = {};
+        ret.tree = finalTree;
+        ret.corpus = corpus;
+        ret = Promise.props(ret);
+        return ret.then(function(output) {
+          var outputJSON;
+          outputJSON = program.pretty ? JSON.stringify(output, null, 2) : JSON.stringify(output);
+          if (program.output) {
+            return fs.writeFileSync(program.output, outputJSON);
+          } else {
+            return console.log(outputJSON);
+          }
+        });
+      };
+    })(this));
+  }
 };
 
 program.version('0.1.0').option('-i, --input [value]', 'Load data from disk').option('-l, --list <items>', 'A list of input texts').option('-o, --output [value]', 'Write results to file').option('-t, --threshold <n>', 'Threshold for Tree Nodes', parseInt).option('-c, --combine', 'Merge document trees to form corpus tree').option('-d, --delim [value]', 'Delimiter to split text into documents').option('-v, --verbose', 'Print additional logging information').parse(process.argv);
