@@ -6,7 +6,7 @@ getConcepts = require __dirname + '/lib/getCandidates'
 {constructSynsetData} = require __dirname + '/lib/constructSynsetData'
 {generateCorpusTree} = require __dirname + '/lib/treeGenerator'
 calculateCounts  = require __dirname + "/lib/counting"
-thresholdTree = require __dirname + "/lib/thresholdTree"
+{ thresholdDocTree, thresholdWordTree }  = require __dirname + "/lib/thresholdTree"
 
 
 BPromise = require 'bluebird'
@@ -30,20 +30,29 @@ createTree = (corpus) ->
   if program.combine
     corpusTree = docTrees.then( (docs) => generateCorpusTree(docs) )
     finalTree = corpusTree.then( (tree) => calculateCounts(tree) )
-    finalTree.then( (data) => console.log util.inspect(data, null, 4) )
+    if program.threshold
+      finalTree = finalTree.then( (tree) => thresholdDocTree(tree, program.threshold) )
 
     finalTree.then( (data) =>
+      for key, value of data
+        data[key].data.isa = null
       ret = {}
-      ret.tree = finalTree
+      ret.tree = data
       ret.corpus = corpus
-      ret = Promise.props(ret);
-      ret.then( (output) =>
-        outputJSON = if program.pretty then JSON.stringify(output, null, 2) else JSON.stringify(output)
-        if program.output
-          fs.writeFileSync(program.output, outputJSON)
-        else
-          console.log(outputJSON)
-      )
+
+      outputJSON = if program.pretty then JSON.stringify(ret, null, 2) else JSON.stringify(ret)
+      if program.output
+        fs.writeFileSync(program.output, outputJSON)
+      else
+        console.log(outputJSON)
+      return
+    ).then( (d) =>
+      console.log "Job successfully completed."
+      process.exit(code=0)
+    )
+    .catch( (e) =>
+      console.log "Job aborted with errors."
+      process.exit(code=1)
     )
 
 program
@@ -55,6 +64,7 @@ program
   .option('-c, --combine','Merge document trees to form corpus tree')
   .option('-d, --delim [value]','Delimiter to split text into documents')
   .option('-v, --verbose','Print additional logging information')
+  .option('-p, --pretty','Prettify JSON output')
   .parse(process.argv);
 
 
@@ -64,7 +74,7 @@ delim = program.delim
 if program.list
   delim ?= ";"
   corpus = program.list.split(delim)
-  createTree(corpus);
+  createTree(corpus)
 else if program.input
   data = fs.readFileSync(program.input)
   mime_type = mime.lookup(program.input)

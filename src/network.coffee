@@ -63,6 +63,8 @@ network = Promise.join(fEdges, fDefs,
       )
     ret.concepts = ret.concepts.map( (o) =>
       o.isa = ret.concepts.filter( (e) => e.name == o.isa[0] )[0]
+      o.lexdomain = "umls"
+      o.words = [{"lemma":o.name}]
       return o
     )
     ret.edges = edges[0];

@@ -15,7 +15,6 @@ typeIsArray = Array.isArray || ( value ) -> return {}.toString.call( value ) is 
 Array::removeAll = (v) -> x for x in @ when x!=v
 
 getCandidates = (docs) ->
-    console.log(docs)
     parsedDocs = metaMap.getConcepts(docs, {})
 
     fMappingCandidates = parsedDocs.map( (data) =>

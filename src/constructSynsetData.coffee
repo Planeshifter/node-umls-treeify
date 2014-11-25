@@ -21,8 +21,7 @@ class SynsetNode
     @docs = if docIndex? then [docIndex] else []
     @docCount = 1
     @words = if candidate.MatchedWords then asArray(candidate.MatchedWords.MatchedWord) else []
-    console.log @words
-    @CandidateCUI = candidate.CandidateCUI
+    @CUIs = if candidate.CandidateCUI then asArray(candidate.CandidateCUI) else []
     if synset.isa
       @parentId = synset.isa.id
     else

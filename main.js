@@ -1,4 +1,4 @@
-var BPromise, Promise, calculateCounts, constructSynsetData, corpus, createTree, csv, data, delim, fNetwork, fs, generateCorpusTree, getConcepts, getQuery, mime, mime_type, program, thresholdTree, util, winston;
+var BPromise, Promise, calculateCounts, constructSynsetData, corpus, createTree, csv, data, delim, fNetwork, fs, generateCorpusTree, getConcepts, getQuery, mime, mime_type, program, thresholdDocTree, thresholdWordTree, util, winston, _ref;
 
 getQuery = require(__dirname + '/lib/connect');
 
@@ -12,7 +12,7 @@ generateCorpusTree = require(__dirname + '/lib/treeGenerator').generateCorpusTre
 
 calculateCounts = require(__dirname + "/lib/counting");
 
-thresholdTree = require(__dirname + "/lib/thresholdTree");
+_ref = require(__dirname + "/lib/thresholdTree"), thresholdDocTree = _ref.thresholdDocTree, thresholdWordTree = _ref.thresholdWordTree;
 
 BPromise = require('bluebird');
 
@@ -56,33 +56,47 @@ createTree = function(corpus) {
         return calculateCounts(tree);
       };
     })(this));
-    finalTree.then((function(_this) {
-      return function(data) {
-        return console.log(util.inspect(data, null, 4));
-      };
-    })(this));
+    if (program.threshold) {
+      finalTree = finalTree.then((function(_this) {
+        return function(tree) {
+          return thresholdDocTree(tree, program.threshold);
+        };
+      })(this));
+    }
     return finalTree.then((function(_this) {
       return function(data) {
-        var ret;
+        var key, outputJSON, ret, value;
+        for (key in data) {
+          value = data[key];
+          data[key].data.isa = null;
+        }
         ret = {};
-        ret.tree = finalTree;
+        ret.tree = data;
         ret.corpus = corpus;
-        ret = Promise.props(ret);
-        return ret.then(function(output) {
-          var outputJSON;
-          outputJSON = program.pretty ? JSON.stringify(output, null, 2) : JSON.stringify(output);
-          if (program.output) {
-            return fs.writeFileSync(program.output, outputJSON);
-          } else {
-            return console.log(outputJSON);
-          }
-        });
+        outputJSON = program.pretty ? JSON.stringify(ret, null, 2) : JSON.stringify(ret);
+        if (program.output) {
+          fs.writeFileSync(program.output, outputJSON);
+        } else {
+          console.log(outputJSON);
+        }
+      };
+    })(this)).then((function(_this) {
+      return function(d) {
+        var code;
+        console.log("Job successfully completed.");
+        return process.exit(code = 0);
+      };
+    })(this))["catch"]((function(_this) {
+      return function(e) {
+        var code;
+        console.log("Job aborted with errors.");
+        return process.exit(code = 1);
       };
     })(this));
   }
 };
 
-program.version('0.1.0').option('-i, --input [value]', 'Load data from disk').option('-l, --list <items>', 'A list of input texts').option('-o, --output [value]', 'Write results to file').option('-t, --threshold <n>', 'Threshold for Tree Nodes', parseInt).option('-c, --combine', 'Merge document trees to form corpus tree').option('-d, --delim [value]', 'Delimiter to split text into documents').option('-v, --verbose', 'Print additional logging information').parse(process.argv);
+program.version('0.1.0').option('-i, --input [value]', 'Load data from disk').option('-l, --list <items>', 'A list of input texts').option('-o, --output [value]', 'Write results to file').option('-t, --threshold <n>', 'Threshold for Tree Nodes', parseInt).option('-c, --combine', 'Merge document trees to form corpus tree').option('-d, --delim [value]', 'Delimiter to split text into documents').option('-v, --verbose', 'Print additional logging information').option('-p, --pretty', 'Prettify JSON output').parse(process.argv);
 
 corpus;
 
